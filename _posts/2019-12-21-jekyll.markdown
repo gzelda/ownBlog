@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyll Introduction"
 date:   2019-12-21 22:10:36 +08
-categories: JS Web Tools
+categories: JS Tools Website
 ---
 
 ### jekyll

@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Javascript 深入手册"
+date:   2019-12-21 22:10:36 +08
+categories: JS
+---
+
+## JS 学习
+
+- 面向对象
+    - ES6之前
+        - new function 生成 object 
+        - 类 => constructor
+        - 原型 => prototype(方法， eosjs中也是这种写法)
+        - 原型链 => ` __proto__`
+    - ES6之后
+        - Class 定义
+        - Extends
+            - 继承原型和私有属性
+            - 子类使用父类空间的操作权限需要`super()`
+                - 子类参数使用父类空间的操作权限。将子类参数放入constructor与super()中
+
+- JS 改变`this`指向
+    - [javascript的this原理](http://www.ruanyifeng.com/blog/2018/06/javascript-this.html)
+    - [javascript的上下文环境](https://www.cnblogs.com/echolun/p/11438363.html)
+
+- Jsonp
+    - [浏览器的同源策略](https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy)

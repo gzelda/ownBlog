@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "React 学习手册"
+date:   2019-12-21 22:17:36 +08
+categories: JS React Website
+---
+
+## React 学习手册
+
+
+### 2019.12.23
+- 基础2
+    - 父组件与子组件数据传输
+        - 父传子
+            ``` 
+                <Child setMsg={this.state.msg}/>
+            ```
+        - 子传父
+            ```
+                <Child getMsg={this.changeState.bind(this)}/>
+            ```
+### 2019.12.20
+- 基础
+    - bower js包管理器 依赖于nodejs
+    - src引入
+        - react.js react逻辑
+        - react-dom.js 虚拟dom
+        - babel jsx语法 
+    - 生命周期
+        - componentWillMount 组件挂载前
+            - 找不到dom元素
+            - state、props可以使用（结合实际场景有一些比较骚气的操作）
+        - componentDidMount 组件挂载后
+            - 可以找到dom元素
+        - componentWillUpdate 组件更新前
+        - componentDidUpdate 组件更新后
+        - componentWillUnmount 组件卸载前
+            - 可以做一些清理工作
+    - 事件冒泡
+        - react封装过默认返回的事件
+            - 调用e.nativeEvent.stopImmediatePropagation()
+    - react控制管理要求虚拟dom下的每一个元素都有一个唯一的标识
+        - //TODO 分析
+    - react不限制网络交互的方式，相对于angular和vue会更自由一些
+
+        
